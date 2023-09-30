@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/LessonListPage.css" />
     <title>LessonListPage</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
@@ -17,7 +18,7 @@
   <body>
     <nav id="navbar"></nav>
 
-    <section class="hero-section">
+    <section class="page-title">
       <div class="text-cover">
         <h1>Our Popular Lesson</h1>
         <br />
@@ -28,10 +29,18 @@
     <section class="class-container">
       <div class="class-row">
         <div class="class-card">
-          <img src="./img/bg1.jpg" alt="Class 1" />
-          <h2>Imagination Classes 1</h2>
-          <p>Class Time: 08:00 am - 10:00 am</p>
-          <p>Description.</p>
+          <img src="https://i.ibb.co/jr4LD1B/Colouring.jpg" alt="Class 1" class="class1">
+          <div class="class-info">
+            <p class="age">Age: 5-7</p>
+            <p class="level">Level: 3</p>
+          </div>
+          <h3>Imagination Classes 1</h3>
+          <div class="description">
+            <p class="desc-time">Class Time: 08:00 am - 10:00 am</p>
+            <p class="desc-title">Description<button><i class="bi bi-chevron-down"></i></button></p>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque enim nesciunt nemo nam. Quis, illo nulla suscipit adipisci nesciunt maxime debitis totam iure aperiam! Nesciunt voluptas ad accusamus harum!</p>
+            <button class="addLesson"><i class="bi bi-plus-lg"></i></button>
+          </div>
         </div>
         <div class="class-card">
           <img src="./img/bg2.jpg" alt="Class 2" />

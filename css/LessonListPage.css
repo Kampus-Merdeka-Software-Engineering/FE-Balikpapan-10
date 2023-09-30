@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .top-bar {
   width: 100%;
   height: 111px;
@@ -50,31 +54,30 @@
   color: #88c87b;
 }
 
-.hero-section {
-  background-image: url(./img/javier-miranda-oGmQ-JsHzO8-unsplash.jpg);
+.page-title {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: saturate(50%);
-  height: 299.16px;
-  padding: 100px 0px;
-  margin-bottom: 60px;
+  filter: saturate(80%);
+  height: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .text-cover h1 {
   font-size: 50px;
   text-align: center;
   font-style: italic;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(253, 250, 88);
+  text-shadow: 2px 2px 4px rgba(161, 159, 159, 0.5);
 }
 
 .text-cover h3 {
-  /* font-size: 50px; */
+  font-size: 22px;
   text-align: center;
   font-style: italic;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(253, 250, 88);
+  text-shadow: 1px 1px 1px rgba(119, 118, 118, 0.5);
 }
 
 .class-container {
@@ -90,19 +93,183 @@
 }
 
 .class-card {
-  flex: 0 0 calc(33.33% - 20px);
-  background-color: #ffffff;
+  flex: 0 0 calc(30% - 20px);
+  height: 300px;
   border: 1px solid #cccccc;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+  position: relative;
+  top: 0;
+  overflow: hidden;
 }
 
-.class-card h2 {
+.class-card .class-info{
+  display: flex;
+}
+
+.class-card .age{
+  color: rgb(53, 53, 53);
+  background-color: rgb(75, 243, 97);
+  border-style: none;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.class-card .level{
+  color: white;
+  background-color: rgb(198, 113, 247);
+  border-style: none;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.class-card h3 {
   color: #ffc000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.class-card .description{
+  position: absolute;
+  background: linear-gradient(0deg, rgb(165, 214, 243) 70%, transparent);
+  margin: -20px;
+  margin-top: 0;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.class-card .desc-time{
+  font-weight: bold;
+  /* color: white; */
+}
+
+@media(hover: hover){
+  .class-card:hover .description{
+    width: 100%;
+    height: 75%;
+    bottom: 10px;
+  }
+  
+  .class-card:hover img{
+    filter: blur(3px);
+  }
 }
 
 .class-card img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  width: 100%;
+  max-height: 80%;
+}
+
+/* .class-card .class1{
+  width: 400px;
+} */
+
+.desc-title{
+  margin-top: 5px;
+}
+
+.desc-title button{
+  margin-top: 0;
+  margin-left: 3px;
+  border-style: none;
+  background: none;
+  /* margin-bottom: 10px; */
+  display: none;
+}
+
+.class-card .addLesson{
+  border-style: none;
+  color: rgb(60, 176, 243);
+  background-color: rgb(255, 252, 85);
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  box-shadow: 1px 1px rgb(168, 161, 161);
+}
+
+.class-card .addLesson:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .page-title{
+    height: fit-content;
+  }
+
+  .text-cover h1{
+    font-size: 40px;
+  }
+
+  .class-container{
+    max-width: 650px;
+  }
+
+  .class-row{
+    display: block;
+  }
+
+  .class-card{
+    height: 200px;
+    display: block;
+    overflow: visible;
+  }
+
+  .class-card img{
+    max-width: 30%;
+    max-height: 60%;
+    display: block;
+  }
+
+  .class-card h3{
+    font-size: 18px;
+  }
+
+  .class-card .class-info{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 200px;
+  }
+
+  .class-info .age, .level{
+    width: 70px;
+    height: 30px;
+  }
+
+  .class-card .description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 37%;
+    background: none;
+    position: absolute;
+    transform: translateY(-170px);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .class-card h3{
+    font-size: 16px;
+  }
+
+  .description .desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 75px;
+    overflow: hidden;
+  }
+
+  .desc-title button{
+    margin-top: 5px;
+  }
 }
