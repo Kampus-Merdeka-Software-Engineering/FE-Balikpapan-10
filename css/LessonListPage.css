@@ -222,6 +222,7 @@ body{
     height: 200px;
     display: block;
     overflow: visible;
+    margin-bottom: 20px;
   }
 
   .class-card img{
@@ -254,12 +255,6 @@ body{
     transform: translateY(-170px);
     width: 100%;
   }
-}
-
-@media screen and (max-width: 576px) {
-  .class-card h3{
-    font-size: 16px;
-  }
 
   .description .desc{
     display: -webkit-box;
@@ -271,5 +266,11 @@ body{
 
   .desc-title button{
     margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .class-card h3{
+    font-size: 16px;
   }
 }
