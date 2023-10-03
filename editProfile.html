@@ -15,7 +15,8 @@
 </head>
 <body>
     <nav id="navbar"></nav>
-    <main>
+    <!-- action="/editProfile/save" method="POST" -->
+    <form id="form" method="POST">
         <div class="top-title">
             <h1>Basic Information</h1>
         </div>
@@ -23,16 +24,19 @@
             <div class="form-top">
                 <label for="first-name">FIRST NAME</label>
                 <input type="text" name="first-name" id="first-name" required>
+                <!-- <div class="error"></div> -->
             </div>
             <div class="form-top">
                 <label for="last-name">LAST NAME</label>
                 <input type="text" name="last-name" id="last-name" placeholder="" required>
+                <!-- <div class="error"></div> -->
             </div>
             <div class="form-email">
                 <label for="email">YOUR EMAIL ADDRESS</label>
                 <div class="emailInput">
                     <i class="bi bi-envelope-fill" id="icon"></i>
-                    <input type="text" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required>
+                    <!-- <div class="error"></div> -->
                 </div>
             </div>
             <div class="desc">
@@ -51,15 +55,17 @@
                 <div  class="form-pass">
                     <label for="new-pass">NEW PASSWORD</label>
                     <input type="password" name="new-pass" id="new-pass" required>
+                    <!-- <div class="error"></div> -->
                 </div>
                 <div class="form-confirm">
                     <label for="confirm-pass" class="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-pass" class="confirm-pass" required>
+                    <input type="password" name="confirm-pass" id="confirm-pass" required>
+                    <div class="error"></div>
                 </div>
             </div>
             <button id="btnConfirm">Save Changes</button> 
         </div>
-    </main>
+    </form>
     <div class="popUpSave">
         <div class="saveNotif">
             <span></span>

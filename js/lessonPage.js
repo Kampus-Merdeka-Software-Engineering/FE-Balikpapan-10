@@ -6,22 +6,25 @@ document.getElementById('btnLike').addEventListener('click', (e) => {
     iconLike.style.color = 'blue';
 })
 
-// function btnDrop(){
-//     document.getElementById('test').classList.toggle('show');
-// }
+const jsonFile = "./lesson.json";
 
-// document.getElementsByClassName('btn-classes')[0].addEventListener('click', () => {
-//     console.log('clicked!');
-//     dropClass.style.display = 'block';
-// })
-
-// dropBtn = addEventListener(e)('click', () => {
-// document.getElementsByClassName('classes-content');
-// })
-
-// window.onclick = (e) => {
-//     // console.log('clicked!');
-//     if(!e.target.matches('btn-classes')){
-//         dropClass.classList.remove('show');
-//     }
-// }
+fetch(jsonFile).then((response) => {
+    return response.json();
+}).then(data => {
+    // const desc = document.getElementsByClassName('lesson-desc')[0];
+    // console.log(data)
+    // data = JSON.parse(data);
+    data.forEach((lesson) => {
+        const create = document.getElementById('create');
+        const like = document.getElementById('like');
+        const comment = document.getElementById('comment');
+        const title = document.getElementById('lesson-title');
+        const desc = document.getElementById('desc-text');
+        comment.innerText = lesson.comments;
+        create.innerText = lesson.creator;
+        like.innerText = lesson.likes;
+        title.innerText = lesson.lessonTitle;
+        desc.innerText = lesson.description;
+        // console.log(lesson.creator);
+    });
+})

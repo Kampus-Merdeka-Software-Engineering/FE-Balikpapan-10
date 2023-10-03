@@ -10,13 +10,11 @@ let navUl = document.querySelector('nav ul')
 btnLogin.addEventListener('click', (e) => {
     e.preventDefault();
     popup.style.display = 'flex'
-    console.log('clicked');
 });
 
 btn_login.addEventListener('click', (e) => {
     e.preventDefault();
     popup.style.display = 'flex'
-    console.log('clicked');
 });
 
 document.getElementsByClassName('close')[0].addEventListener('click', () => {
