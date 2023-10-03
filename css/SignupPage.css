@@ -2,7 +2,6 @@
 *{
     padding: 0;
     margin: 0;
-<<<<<<< HEAD
     box-sizing: border-box;
     font-family: 'poppins, sans-serif';
 }
@@ -124,26 +123,14 @@ form .input-field {
 /*.container {
     margin-top: 60px;
     height: 100%;
-=======
-    font-family: 'poppins, sans-serif';
-    /* background-color: lightskyblue; */
-}
-
-/* .container{
-    height: 90%;
->>>>>>> 573492e6949393101889c54759640e6d849831e1
     max-width: 720px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: lightskyblue;
-<<<<<<< HEAD
-}
-=======
 } */
->>>>>>> 573492e6949393101889c54759640e6d849831e1
 
-.form {
+/*.form {
     background: #fff;
     border-radius: 3px;
     padding: 1px;
@@ -234,7 +221,7 @@ a.google span{
 
 .field input{
     display: flex;
-   width: 473px;
+   width: 100%;
    height: 40.5px;
    padding: 0px 1px 0px 0px; 
    margin-left: 18px;
@@ -252,13 +239,8 @@ a.google span{
     position: absolute;
     padding: 13px;
     min-width: 70px;
-<<<<<<< HEAD
     right: 33%;
     transform: translateY(-95%);
-=======
-    /* right: 33%; */
-    /* transform: translateY(-95%); */
->>>>>>> 573492e6949393101889c54759640e6d849831e1
     cursor: pointer;
 }
 
@@ -288,8 +270,4 @@ a.google span{
 
 .signup-link{
     text-decoration: none;
-<<<<<<< HEAD
 }*/
-=======
-}
->>>>>>> 573492e6949393101889c54759640e6d849831e1
