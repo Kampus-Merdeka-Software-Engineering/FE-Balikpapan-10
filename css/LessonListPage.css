@@ -8,7 +8,7 @@ body{
   overflow-x: hidden;
 }
 
-.top-bar {
+/* .top-bar {
   width: 100%;
   height: 111px;
   padding: 0px 224px;
@@ -52,7 +52,7 @@ body{
 
 .right-content .navigation li:nth-child(5) a {
   color: #88c87b;
-}
+} */
 
 .page-title {
   background-size: cover;
