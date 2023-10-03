@@ -1,15 +1,24 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap);
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css2?family=Mogra&family=Oswald&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap);
 
 html{
     scroll-behavior: smooth;
     /* overflow-x: hidden; */
+=======
+
+html{
+    scroll-behavior: smooth;
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 body{
     background-color: white;
     margin: 0px;
+<<<<<<< HEAD
     overflow-x: hidden;
+=======
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 .page-title{
@@ -18,6 +27,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: auto;
+<<<<<<< HEAD
     background-color: rgba(250, 247, 74, 0.5);
 }
 
@@ -33,6 +43,9 @@ body{
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
     color: rgb(165, 214, 243);
+=======
+    background-color: rgb(240, 230, 239);
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 main{
@@ -42,11 +55,20 @@ main{
 }
 
 .main-content{
+<<<<<<< HEAD
     width: 100%;
     height: 1100px;
     grid-column-start: 1;
     grid-column-end: 3;
     margin-top: 20px;
+=======
+    /* background-color: blue; */
+    width: 100%;
+    height: 1300px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 40px;
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 .main-content img{
@@ -76,6 +98,10 @@ main{
 
 .lesson-desc i{
     height: 20px;
+<<<<<<< HEAD
+=======
+    /* width: 50px; */
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
     margin-top: 16px;
     margin-right: 3px;
 }
@@ -84,7 +110,10 @@ main{
     border-style: none;
     background-color: white;
     padding: 0;
+<<<<<<< HEAD
     margin-top: 0;
+=======
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 .lesson-desc #btnLike:hover{
@@ -116,26 +145,41 @@ main{
 }
 
 .side-content{
+<<<<<<< HEAD
     width: 100%;
     height: 1100px;
+=======
+    /* background-color: green; */
+    width: 100%;
+    height: 1300px;
+    /* margin-top: 40px; */
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
     border-left: thin;
     border-color: rgb(222, 222, 223);
     border-right: 0;
     border-top: 0;
     border-bottom: 0;
     border-style: solid;
+<<<<<<< HEAD
     margin-top: 55px;
     margin-bottom: 40px;
+=======
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 form{
     margin-bottom: 50px;
+<<<<<<< HEAD
     margin-top: 0px;
+=======
+    margin-top: 20px;
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 form #search{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     margin-top: 0;
     margin: auto;
     width: 365px;
@@ -151,6 +195,15 @@ form #search{
 .side-content ::placeholder{
     color: rgb(181, 188, 192);
     opacity: .8;
+=======
+    margin: auto;
+    width: 344px;
+    border-radius: 5px;
+    border-color: rgb(222, 222, 223);
+    border-style: solid;
+    padding: 8px;
+    box-shadow: inset .3px .3px .3px .3px #f0f1f2;
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
 }
 
 .sidebar{
@@ -199,6 +252,7 @@ form #search{
     justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
     main{
         padding: 2%;
@@ -274,3 +328,60 @@ form #search{
     }
 
 }
+=======
+footer{
+    background-color: rgb(215, 165, 243);
+    width: 100%;
+    height: 170px;
+    display: flex;
+    
+}
+
+.footer-content{
+    display: flex;
+    width: 97%;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: auto;
+}
+
+footer a{
+    margin-top: 20px;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.join-newsletter{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.join-newsletter input{
+    width: 447px;
+    height: 40px;
+    background-color: rgb(215, 165, 243);
+    color: white;
+    border-color: white;
+    border-style: solid;
+    padding: 0;
+    font-size: 12pt;
+    padding-bottom: 1px;
+    padding-left: 10px;
+}
+
+.join-newsletter button{
+    height: 45px;
+    width: 197px;
+    border: 0;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(215, 165, 243);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+>>>>>>> 573492e6949393101889c54759640e6d849831e1
