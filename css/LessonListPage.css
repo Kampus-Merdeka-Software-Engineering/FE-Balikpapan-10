@@ -81,19 +81,27 @@ body{
 }
 
 .class-container {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  justify-content: center;
 }
 
 .class-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  /* align-items: center; */
   margin-bottom: 40px;
 }
 
 .class-card {
   flex: 0 0 calc(30% - 20px);
+  flex-wrap: wrap;
+  /* min-width: */
+  /* width: 30%; */
   height: 300px;
   border: 1px solid #cccccc;
   padding: 20px;
@@ -102,6 +110,10 @@ body{
   position: relative;
   top: 0;
   overflow: hidden;
+  margin-right: 0;
+  margin-left: 0;
+  border-radius: 30px;
+  margin-bottom: 30px;
 }
 
 .class-card .class-info{
@@ -147,6 +159,14 @@ body{
   padding-top: 0px;
 }
 
+.description .desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 75px;
+  overflow: hidden;
+}
+
 .class-card .desc-time{
   font-weight: bold;
   /* color: white; */
@@ -166,8 +186,11 @@ body{
 
 .class-card img {
   /* max-width: 100%; */
-  width: 100%;
-  max-height: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: fit-content;
+  max-height: 75%;
 }
 
 /* .class-card .class1{
@@ -207,43 +230,51 @@ body{
   }
 
   .text-cover h1{
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .class-container{
-    max-width: 650px;
-  }
-
-  .class-row{
+    max-width: 100%;
     display: block;
   }
+
+  /* .class-row{
+    display: block;
+  } */
 
   .class-card{
     height: 200px;
-    display: block;
+    /* display: flex; */
+    width: 100%;
     overflow: visible;
     margin-bottom: 20px;
+    /* display: block; */
   }
 
   .class-card img{
     max-width: 30%;
     max-height: 60%;
     display: block;
+    /* flex-direction: column; */
+    float: left;
   }
 
   .class-card h3{
     font-size: 18px;
+    width: fit-content;
   }
 
   .class-card .class-info{
     display: flex;
+    /* flex-direction: column; */
     /* justify-content: space-evenly; */
-    width: 200px;
+    width: fit-content;
   }
 
   .class-info .age, .level{
     width: 70px;
     height: 30px;
+    /* display: flex; */
   }
 
   .class-card .description{
@@ -251,8 +282,8 @@ body{
     flex-direction: column;
     padding-left: 37%;
     background: none;
-    position: absolute;
-    transform: translateY(-170px);
+    /* position: absolute;
+    transform: translateY(-170px); */
     width: 100%;
   }
 

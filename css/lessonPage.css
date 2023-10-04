@@ -54,6 +54,7 @@ main{
     margin: auto;
     width: 650px;
     height: 343px;
+    /* background-color: rgb(117, 148, 214); */
 }
 
 .main-content .lesson-info{
@@ -67,7 +68,12 @@ main{
 
 .lesson-info .lesson-desc{
     display: flex;
-    margin-left: 20px;
+    background-color: rgba(253, 250, 102, 0.925);;
+    /* margin-left: 20px; */
+}
+
+.lesson-info #create{
+    padding-left: 10px;
 }
 
 .lesson-desc p{
@@ -82,9 +88,9 @@ main{
 
 .lesson-desc #btnLike{
     border-style: none;
-    background-color: white;
     padding: 0;
     margin-top: 0;
+    background-color: rgba(253, 250, 102, 0.925);
 }
 
 .lesson-desc #btnLike:hover{
@@ -105,6 +111,7 @@ main{
 .lesson-tag{
     display: flex;
     margin-top: 40px;
+    background-color: rgb(165, 214, 243);
 }
 
 .lesson-tag #share{
@@ -228,12 +235,14 @@ form #search{
 
     .lesson-tag{
         display: flex;
-        width: 50%;
+        width: 42%;
         margin: 0;
     }
 
     .lesson-tag .tags{
         margin: 0;
+        margin-top: 17px;
+        margin-left: 5px;
     }
 
     .side-content{
@@ -262,6 +271,10 @@ form #search{
         padding: 2%;
         grid-template-columns: 40% 15% 40%;
         column-gap: 15px;
+    }
+
+    .main-content .lesson-desc{
+        width: 42%;
     }
 
     .lesson-info #desc-text{
