@@ -9,6 +9,7 @@ html{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background-color: rgb(255, 255, 255);
@@ -64,7 +65,7 @@ margin-top: 0px;
 }
 
 .welbes{
-  font-family: 'mogra';
+  font-family: 'Roboto', sans-serif;
   text-shadow: #ffffff;
   margin-left: 30px;
   display: flex;
@@ -120,7 +121,7 @@ cursor: pointer;
 }
 
 .tittleinfo{
-  font-family: 'mogra';
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 15px
 }
 
@@ -168,7 +169,8 @@ background-color: #62cafe;
 .poptittle {
   display: flex;
   justify-content: center;
-  font-family: 'Mogra';
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -238,7 +240,7 @@ background-color: #dc14f2;
 .top-article .ourteam h2 {
 margin: 50px;
 font-size: 40px;
-font-family: 'Mogra';
+font-family: 'Roboto', sans-serif;
 color: white;
 }
 
@@ -372,7 +374,7 @@ height: 340px;
 }
 
 .comments h1 {
-  font-family: 'Mogra';
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   padding: 32px;
   text-align: center;
@@ -381,7 +383,7 @@ height: 340px;
 
 .comments .desc {
   font-size: 10px;
-  font-family: 'roboto';
+  font-family: 'Roboto', sans-serif;
   padding-bottom: 40px;
 }
 
@@ -415,7 +417,7 @@ height: 340px;
 }
 
 .name {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #de3c3caa;
   padding-right: 20px;
@@ -436,7 +438,7 @@ height: fit-content;
 }
 
 .partners h1 {
-font-family: 'Mogra';
+font-family: 'Roboto' sans-serif;
 font-size: 24px;
 padding: 32px;
 text-align: center;
@@ -445,9 +447,30 @@ color: #ffffff;
 
 .partners img {
 flex: 0 0 calc(50%-150px);
-width: 200px;
 margin: 24px;
-height: 200px;
 padding: 12px;
 }
 
+/* Tablet */
+@media (max-width: 1200px) {
+
+  .partners img {
+    width: 70%;
+    height:  70%;
+  }
+  }
+@media (max-width: 768px) {
+
+  .partners img {
+    width: 66.50%;
+    height:  66.50%;
+  }
+  }
+  /* Handphone */
+  @media (max-width: 576px) {
+  
+    .partners img {
+    width: 50%;
+    height: 50%;
+  }
+  }
