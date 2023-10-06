@@ -1,42 +1,63 @@
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-  }
-}
+let coloumns = [
+  {
+    title : "Imagination Classes 1",
+    button1 : "Age: 5-7",
+    button2 : "Level: 1-5",
+    img : "/img/Colouring.jpg"
+  },
+  {
+    title : "Imagination Classes 1",
+    button1 : "Age: 5-7",
+    button2 : "Level: 1-5",
+    img : "/img/Creativity.jpg"
+  },
+  {
+    title : "Imagination Classes 1",
+    button1 : "Age: 5-7",
+    button2 : "Level: 1-5",
+    img : "/img/Calistung.jpg"
+  },
+  {
+    title : "Imagination Classes 1",
+    button1 : "Age: 5-7",
+    button2 : "Level: 1-5",
+    img : "/img/Math.jpg"
+  },
+  {
+    title : "Imagination Classes 1",
+    button1 : "Age: 5-7",
+    button2 : "Level: 1-5",
+    img : "/img/Reading.jpg"
+  },
+  {
+    title : "Imagination Classes 1",
+    button1 : "Age: 5-7",
+    button2 : "Level: 1-5",
+    img : "/img/Writing.jpg"
+  },
+]
 
-function AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+let wrapper = document.getElementById("wrapper-class");
+let listClass = "";
+console.log(listClass);
 
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
+for(let i=0; i<1; i++){
+coloumns.forEach((coloumn) => {
+  listClass += `
+  <div class="content">
+				<img src="${coloumn.img}" alt="eduten" class="images"/>
+        <button class=button1>${coloumn.button1}</button>
+        <button class=button2>${coloumn.button2}</button>
+				<h4>${coloumn.title}</h4>
+        <button class="delete-button" onclick="del()">Unsubscribe</button>
+			</div>
+       `
+});
 }
+console.log(listClass);
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("BtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+wrapper.innerHTML = listClass;
+ function del(coloumn) {
+   document.getElementById("wapper-class");
+   element.remove(coloumn)
+ }

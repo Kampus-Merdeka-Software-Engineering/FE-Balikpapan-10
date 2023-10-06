@@ -31,6 +31,7 @@ body{
 main {
 	margin: auto;
   padding: 25px;
+  max-width: 100%;
 }
 h3 {
 	font-size: 25px;
@@ -42,7 +43,7 @@ h4 {
     margin: 11px 0 7px 0;
     color: rgb(209, 209, 8);
     font-size: 20px;
-	text-align: center;
+	  text-align: center;
 }
 
 .images {
@@ -51,7 +52,7 @@ h4 {
     height: 250px;
 }
 .content-title{
-  margin-top: 30px;
+    margin-top: 30px;
     margin-bottom: 8px;
     margin-left: 30px;
     height: 42px;
@@ -63,43 +64,72 @@ h4 {
 .row {
 	margin: auto;
   max-width: 100%;
-  
-  /*max-width: 800px;*/
+  display: flex;
+  flex-wrap: wrap;
 }
+.row1{
+  margin: auto;
+  max-width: 100%;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
 .row,
 .row > .column {
 	padding: 25px;
 }
-
-/* Create three columns */
+.row1,
+.row1 > .column1 {
+	padding: 25px;
+}
+#wrapper-class{
+  gap: 25px;
+  width: 450px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#row-class{
+  width: 100%;
+}
 .column {
 	float: left;
-	width: 400px;
-  display: flex;
+	width: 450px;
 }
+/*.coloumn1{
+  float: left;
+	width: 33.3%;
+  display: none;
+}*/
 
-/* Clear floats after rows */ 
-.row:after {
+.row1:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
 .content {
-    padding: 10px;
 	  cursor: pointer;
     border-radius: 5px;
     border: 1px solid #cccccc;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     justify-content: center;
-   /* background-image: linear-gradient(to right, #02AAB0 , #00CDAC);/*/
+}
+.container{
+  cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-left: 25px;
 }
 
-/* The "show" class is added to the filtered elements */
-.show {
+/*.show {
 	display: block;
-}
+}*/
 .button1{
   background: rgb(13, 234, 13);
 }
@@ -112,30 +142,12 @@ h4 {
   width: 100%;
   background: #02AAB0;
 }
-/* Style the buttons */
-.btn {
-	border: none;
-	outline: none;
-	padding: 12px 16px;
-	background-color: #fff;
-	cursor: pointer;
-	border-radius: 20px;
-	font-size: 15px;
-	font-family: 'Josefin Sans', sans-serif;
+.delete-button{
+  padding: 5px;
+  background: #E74645;
 }
 
-.btn:hover {
-	color: #fff;
-	background-image: linear-gradient(to right, #02AAB0 , #00CDAC);
-}
 
-.btn.active {
-  color: #fff;
-  border-radius: 20px;
-	background-image: linear-gradient(to right, #02AAB0 , #00CDAC);
-}
-
-/* Responsive media query */
 @media (max-width: 768px) {
   .page-title{
     width: 100%;
@@ -143,17 +155,38 @@ h4 {
 	.column {
 		width: 50%;
 	}
-	.btn {
-		padding: 11px 14px;
-	}
-  
+  .container{
+    width: 42%;
+  }
+  #wrapper-class{
+    width: 50%;
+  }
+  .images{
+    height: 150px;
+  }
+  h4{
+    font-size: 15px;
+  }
+  .button1{
+    font-size: 10px;
+  }
+  .button2{
+    font-size: 10px;
+  }
+  .add-button{
+    font-size: 10px;
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .column {
 		width: 100%;
 	}
-	.btn {
-		padding: 11px 14px;
-	}
+	#wrapper-class{
+    width: 100%;
+  }
+  .container{
+    width: 80%;
+  }
 }
 
