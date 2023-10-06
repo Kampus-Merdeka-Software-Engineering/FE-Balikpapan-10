@@ -3,37 +3,37 @@ let coloumns = [
     title : "Imagination Classes 1",
     button1 : "Age: 5-7",
     button2 : "Level: 1-5",
-    img : "/img/Colouring.jpg"
+    img : "./img/Colouring.jpg"
   },
   {
     title : "Imagination Classes 1",
     button1 : "Age: 5-7",
     button2 : "Level: 1-5",
-    img : "/img/Creativity.jpg"
+    img : "./img/Creativity.jpg"
   },
   {
     title : "Imagination Classes 1",
     button1 : "Age: 5-7",
     button2 : "Level: 1-5",
-    img : "/img/Calistung.jpg"
+    img : "./img/Calistung.jpg"
   },
   {
     title : "Imagination Classes 1",
     button1 : "Age: 5-7",
     button2 : "Level: 1-5",
-    img : "/img/Math.jpg"
+    img : "./img/Math.jpg"
   },
   {
     title : "Imagination Classes 1",
     button1 : "Age: 5-7",
     button2 : "Level: 1-5",
-    img : "/img/Reading.jpg"
+    img : "./img/Reading.jpg"
   },
   {
     title : "Imagination Classes 1",
     button1 : "Age: 5-7",
     button2 : "Level: 1-5",
-    img : "/img/Writing.jpg"
+    img : "./img/Writing.jpg"
   },
 ]
 
