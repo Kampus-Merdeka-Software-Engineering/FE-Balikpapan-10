@@ -38,7 +38,7 @@ html {
 /*Banner*/
 
 .top{
-background-image: url(https://cdn.wallpapersafari.com/63/25/lLIYKM.jpg);
+background-image: url(../img/Hero.png);
 color: rgba(123, 67, 155, 0.63);
 background-size: cover;
 background-repeat: no-repeat;
@@ -52,40 +52,47 @@ height: 500px;
 .top {
   height: fit-content;
 }
+.top-content {
+  font-size: 62.5%;
+}
+h3 {
+  margin-top: 50%;
+}
 }
 /* Handphone */
 @media (max-width: 576px) {
+.top-content {
+    font-size: 50%;
+  }
 .top {
   height: fit-content;
 }
 }
 
-.top details {
-margin-top: 0px;
+
+.top h3 {
+  font-family: 'Bubblegum Sans', cursive;
+  color: #ffffff;
+  margin-left: 30px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
 }
 
-.welbes{
-  font-family: 'Roboto', sans-serif;
-  text-shadow: #ffffff;
-  margin-left: 30px;
-  display: flex;
-}
 .toptext{
   padding-top: 40px;
 }
-.mono{
+/*.mono{
   width: 400px;
   margin-left: 40px;
   font-size: 15px;
   color: rgb(255, 255, 255);
-}
+}*/
 
 .topBtn{
-background-color: #bd8dcc;
+background-color: #FEA926;
 padding: 16px;
-color: rgb(255, 255, 255);
-border-color: white;
-border-style: solid;
+color: white;
 border-radius: 18px;
 font-size: 15px;
 margin-left: 40px;
@@ -103,7 +110,7 @@ cursor: pointer;
 /* About EduTen*/
 
 .info{
-  background-color: rgb(255, 184, 92);
+  background-color: #FEA926;
   max-height: fit-content;
   width: 100%;
   padding: 50px;
@@ -121,8 +128,9 @@ cursor: pointer;
 }
 
 .tittleinfo{
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 15px
+  font-family: 'Bubblegum Sans', cursive;
+  margin-bottom: 15px;
+  font-size: 60px;
 }
 
 .infotext{
@@ -139,6 +147,9 @@ cursor: pointer;
   width: 66.50%;
   height:  66.50%;
 }
+.tittleinfo {
+  font-size: 40px;
+}
 }
 /* Handphone */
 @media (max-width: 576px) {
@@ -147,16 +158,11 @@ cursor: pointer;
   width: 50%;
   height: 50%;
 }
+.tittleinfo {
+  font-size: 24px;
+}
 }
 
-
-.adesc {
-margin-bottom: 20px;
-}
-
-.info aside a:hover{
-background-color: #62cafe;
-}
 
 /*Popular Lesson*/
 
@@ -169,13 +175,13 @@ background-color: #62cafe;
 .poptittle {
   display: flex;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bubblegum Sans', cursive;
   font-weight: bold;
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  color: rgb(91, 198, 255);
+  color: #B53953;
 }
 
 .class-row {
@@ -199,7 +205,7 @@ background-color: #62cafe;
 }
 
 .class-card h2 {
-  color: #c54343;
+  color: #B53953;
 }
 
 .class-row .class-card img {
@@ -209,7 +215,7 @@ background-color: #62cafe;
 }
 
 .moreless {
-      background-color: rgb(91, 198, 255);
+      background-color: #B53953;
       padding: 10px;
       color: rgb(255, 255, 255);
       font-size: 10px;
@@ -222,7 +228,7 @@ background-color: #62cafe;
 }
 
 .class-container a:hover {
-background-color: #7bd0fa;
+background-color: #d04664;
 }
 
 /*Our Team*/
@@ -234,13 +240,13 @@ align-items: center;
 justify-content: center;
 min-height: 100vh;
 padding: 0 35px;
-background-color: #dc14f2;
+background-color: #FEA926;
 }
 
 .top-article .ourteam h2 {
 margin: 50px;
 font-size: 40px;
-font-family: 'Roboto', sans-serif;
+font-family: 'Bubblegum Sans', cursive;
 color: white;
 }
 
@@ -344,7 +350,7 @@ font-size: 1.31rem;
 /* Overlay */
 
 .overlay .content {
-  background: #ff8b32;
+  background: #490D98;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -374,16 +380,16 @@ height: 340px;
 }
 
 .comments h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bubblegum Sans', cursive;
   font-size: 24px;
   padding: 32px;
   text-align: center;
-  color: #37B6F6;
+  color: #E74645;
 }
 
 .comments .desc {
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bubblegum Sans', cursive;
   padding-bottom: 40px;
 }
 
@@ -417,7 +423,7 @@ height: 340px;
 }
 
 .name {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bubblegum Sans', cursive;
   font-weight: bold;
   color: #de3c3caa;
   padding-right: 20px;
@@ -431,14 +437,14 @@ height: 340px;
 /* Our Partners Logo */
 
 .partners {
-background-color: #ffa8a8;
+background-color: #490D98;
 text-align: center;
 width: 100%;
 height: fit-content;
 }
 
 .partners h1 {
-font-family: 'Roboto' sans-serif;
+font-family: 'Bubblegum Sans', cursive;
 font-size: 24px;
 padding: 32px;
 text-align: center;
@@ -456,7 +462,7 @@ padding: 12px;
 
   .partners img {
     width: 70%;
-    height:  70%;
+    height:  650%;
   }
   }
 @media (max-width: 768px) {
