@@ -44,6 +44,7 @@ h4 {
     color: rgb(209, 209, 8);
     font-size: 20px;
 	  text-align: center;
+    text-decoration: none;
 }
 
 .images {
@@ -70,8 +71,8 @@ h4 {
 .row1{
   margin: auto;
   max-width: 100%;
-  /*display: flex;
-  flex-wrap: wrap;*/
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .row,
@@ -83,12 +84,13 @@ h4 {
 	padding: 25px;
 }
 #wrapper-class{
-  gap: 25px;
-  width: 450px;
+  width: 100%;
   height: auto;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
+  gap: 65px;
+  justify-content: left;
 }
 #row-class{
   width: 100%;
@@ -97,11 +99,6 @@ h4 {
 	float: left;
 	width: 450px;
 }
-/*.coloumn1{
-  float: left;
-	width: 33.3%;
-  display: none;
-}*/
 
 .row1:after {
 	content: "";
@@ -116,20 +113,18 @@ h4 {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     justify-content: center;
+    text-decoration: none;
+    width: 350px;
 }
 .container{
-  cursor: pointer;
+    cursor: pointer;
     border-radius: 5px;
     border: 1px solid #cccccc;
     padding: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    margin-left: 25px;
+    width: 350px;
+    margin-left: 35px;
 }
-
-/*.show {
-	display: block;
-}*/
 .button1{
   background: rgb(13, 234, 13);
 }
@@ -146,11 +141,12 @@ h4 {
   padding: 5px;
   background: #E74645;
 }
-
-
 @media (max-width: 768px) {
   .page-title{
     width: 100%;
+  }
+  #navbar{
+    font-size: 12px;
   }
 	.column {
 		width: 50%;
