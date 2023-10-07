@@ -81,13 +81,33 @@ const handleCard = () => {
   elementCards.forEach((card) => {
     card.addEventListener('click', (e) => {
       console.log(card.id);
-      var url = 'http:localhost'
+      // location.href = "./lessonPage.html";
     });
     // addBtn.addEventListener('click', (e) => {
     //   e.stopPropagation();
     //   console.log('click');
     // })
   })
+}
+
+async function fetchLessonById(){
+  let elementCards = document.querySelectorAll('.class-card:not(.addLesson)');
+  let addBtn = document.querySelector('.addLesson');
+  try { 
+    elementCards.forEach((card) => {
+      card.addEventListener('click', (e) => {
+        const lessonId = card.id
+        console.log(card.id);
+        window.location.assign(`https://kampus-merdeka-software-engineering.github.io/FE-Balikpapan-10/lessonDetails/${lessonId}`)
+        // const response = await fetch{`${API_BASE_URL}/lessonPage/${lessonId}`};
+        // const lesson = await response.json();
+        // location.href = "./lessonPage.html";
+      });
+    })
+  }
+  catch {
+
+  }
 }
 
 // const addLesson = () => {

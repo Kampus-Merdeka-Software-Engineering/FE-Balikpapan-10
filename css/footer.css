@@ -27,6 +27,7 @@ footer{
 
 footer .desc{
     /* margin-top: 40px; */
+    font-family: 'Roboto', sans-serif;
     font-size: x-large;
     color: rgb(165, 214, 243);
     display: flex;

@@ -26,11 +26,14 @@ fetch(jsonFile).then((response) => {
         like.innerText = lesson.likes;
         title.innerText = lesson.lessonTitle;
         desc.innerText = lesson.description;
-        // console.log(lesson.creator);
-        // lesson.tags.forEach((tags) => {
-        //     const tag = document.createElement('p');
-        //     tag.innerText = tags;
-        //     lessonTag.appendChild(tag);
-        // })
     });
 })
+
+const main = document.getElementsByClassName('main-content')[0];
+
+main.addEventListener('scroll', (e) => {
+    AOS.init();
+})
+
+// window.addEventListener('load', function() { AOS.init(); });
+// window.addEventListener('load', AOS.refresh);

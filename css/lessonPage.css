@@ -3,13 +3,13 @@
 
 html{
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body{
     background-color: white;
     margin: 0px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .page-title{
@@ -148,7 +148,7 @@ form #search{
     width: 365px;
     height: 35px;
     border-radius: 5px;
-    border-color: rgb(243, 243, 243);
+    border-color: rgb(253, 250, 102);
     border-style: solid;
     padding: 8px;
     box-shadow: inset .3px .3px .3px .3px #f0f1f2;
@@ -173,7 +173,7 @@ form #search{
     display: flex;
     border-style:solid;
     border-width: thin;
-    border-color: rgb(222, 222, 223);
+    border-color: rgb(253, 250, 102);
     border-bottom: 0;
     justify-content: space-between;
     padding-left: 10px;
@@ -182,7 +182,7 @@ form #search{
 
 .sidebar .download{
     border-style:solid;
-    border-color: rgb(222, 222, 223);
+    border-color: rgb(253, 250, 102);
     border-width: thin;
     padding-left: 10px;
 }
