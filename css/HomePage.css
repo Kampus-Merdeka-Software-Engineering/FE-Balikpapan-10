@@ -23,7 +23,7 @@ body{
   align-items: center;
   justify-content: center;
   margin: auto;
-  background-color: rgba(7, 143, 203, .8);
+  background-image: url(../img/bgpage.png);
 }
 .page-title p{
   padding-bottom: 20px;
