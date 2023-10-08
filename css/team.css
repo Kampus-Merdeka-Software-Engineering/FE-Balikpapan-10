@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    text-align: center
+  }
+  .header {
+    width: 100%;
+    height: 272px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .h1 {
+    width: 100%;
+    height: 50%;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    font-family: Bubblegum Sans;
+    font-weight: Regular;
+    font-size: 65px;
+    opacity: 1;
+    text-align: center;
+  }
+  .h2 {
+    width: 100%;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  .flex-container-team {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1%;
+  }
+  .TeamList {
+    width: 561px;
+    height: 236px;
+    background: rgba(254,169,38,1);
+    opacity: 1;
+    position: relative;
+    margin: 1%;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+  }
+  .FotoBox {
+    width: 236px;
+    height: 236px;
+    background: rgba(73,13,152,1);
+    margin: 0%;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .FotoTeam {
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+  }
+  .NamaTeam {
+    width: 100%;
+    color: rgba(73,13,152,1);
+    position: absolute;
+    top: 58px;
+    left: 256px;
+    font-family: Bubblegum Sans;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  .TeamJob {
+    width: 100%;
+    color: rgba(73,13,152,1);
+    position: absolute;
+    top: 94px;
+    left: 256px;
+    font-family: Bubblegum Sans;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .linkedid {
+    position: absolute;
+    top: 132px;
+    left: 256px;
+    overflow: hidden;
+  }
+  .github {
+    position: absolute;
+    top: 132px;
+    left: 299px;
+    overflow: hidden;
+  }
+
