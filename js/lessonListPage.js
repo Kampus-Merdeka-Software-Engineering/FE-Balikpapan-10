@@ -24,6 +24,7 @@
 //     `
 //     })
 //     container.innerHTML = cards;
+//     handleCard();
 //   }
 //   catch (error) {
 //     console.error(error);
@@ -62,9 +63,9 @@ fetch(jsonFile).then((response) => {
         </div>
         <h3>${lesson.lessonTitle}</h3>
         <div class="description">
+          <h5>${lesson.lessonTitle}</h5>
           <p class="desc-title">Description<button><i class="bi bi-chevron-down"></i></button></p>
           <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas neque enim nesciunt nemo nam. Quis, illo nulla suscipit adipisci nesciunt maxime debitis totam iure aperiam! Nesciunt voluptas ad accusamus harum!</p>
-          <button class="addLesson"><i class="bi bi-plus-lg"></i></button>
         </div>
       </div>
       `
@@ -75,13 +76,17 @@ fetch(jsonFile).then((response) => {
     // addLesson();
 })
 
+{/* <button class="addLesson"><i class="bi bi-plus-lg"></i></button> */}
+const path = window.location.pathname;
+console.log(path);
+
 const handleCard = () => {
   let elementCards = document.querySelectorAll('.class-card:not(.addLesson)');
   let addBtn = document.querySelector('.addLesson');
   elementCards.forEach((card) => {
     card.addEventListener('click', (e) => {
       console.log(card.id);
-      // location.href = "./lessonPage.html";
+      window.location.assign(`https://kampus-merdeka-software-engineering.github.io/FE-Balikpapan-10/lessonDetails/${card.id}`)
     });
     // addBtn.addEventListener('click', (e) => {
     //   e.stopPropagation();
@@ -90,25 +95,25 @@ const handleCard = () => {
   })
 }
 
-async function fetchLessonById(){
-  let elementCards = document.querySelectorAll('.class-card:not(.addLesson)');
-  let addBtn = document.querySelector('.addLesson');
-  try { 
-    elementCards.forEach((card) => {
-      card.addEventListener('click', (e) => {
-        const lessonId = card.id
-        console.log(card.id);
-        window.location.assign(`https://kampus-merdeka-software-engineering.github.io/FE-Balikpapan-10/lessonDetails/${lessonId}`)
-        // const response = await fetch{`${API_BASE_URL}/lessonPage/${lessonId}`};
-        // const lesson = await response.json();
-        // location.href = "./lessonPage.html";
-      });
-    })
-  }
-  catch {
+// async function fetchLessonById(){
+//   let elementCards = document.querySelectorAll('.class-card:not(.addLesson)');
+//   let addBtn = document.querySelector('.addLesson');
+//   try { 
+//     elementCards.forEach((card) => {
+//       card.addEventListener('click', (e) => {
+//         const lessonId = card.id
+//         console.log(card.id);
+//         window.location.assign(`https://kampus-merdeka-software-engineering.github.io/FE-Balikpapan-10/lessonDetails/${lessonId}`)
+//         // const response = await fetch{`${API_BASE_URL}/lessonPage/${lessonId}`};
+//         // const lesson = await response.json();
+//         // location.href = "./lessonPage.html";
+//       });
+//     })
+//   }
+//   catch {
 
-  }
-}
+//   }
+// }
 
 // const addLesson = () => {
 //   let addBtn = document.querySelectorAll('.addLesson');
