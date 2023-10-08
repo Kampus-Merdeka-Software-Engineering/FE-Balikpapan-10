@@ -10,31 +10,31 @@
           </style>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+
+        <script>
+          $(function(){
+              $('#footer').load("footer.html");
+              $('#navbar').load("navbar.html");
+          });
+        </script>
+
+
         <body>
-           <nav class="navbar">
-                    <ul class="nama">EduTen</ul>
-                    <ul>                      
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li class=""><a href="#classes">Classes</a></li>
-                      <li class=""><a href="#teachers">Teachers</a></li>
-                      <li class="contact"><a href="#contact">Contact</a></li>
-                      <li class="topright"><a href="#search"><ion-icon name="search-circle"></ion-icon></a></li>
-                      <li class="topright"><a href="login"><ion-icon name="person-circle"></ion-icon></a></li>
-                    </ul>
-            </nav>
+
+          <!-- Navbar -->
+
+            <nav id="navbar"></nav>
 
            <!-- Banner -->
-           
-            <section class="top">
-                    <p class="toptext"><h3 class="welbes">Welcome to EduTen </h3>
-                    <h1 class="welbes">Best For Education</h1></p>
-                  <details>
-                    <summary class="mono">Monotonely principle centered ahitectures through and standards magnetic
-                      metrics whereas cross functional products.</summary>
-                    <p class="mono">Active Learning Uniquely productivate real time collaboration idea-sharing after awesome quality vectors after</p></details>
-                    <a href="#topbottom" class="topbottom">Read More</a> 
-            </section>
+          <section class="top">
+              <p class="toptext"><h3 class="welbes">Welcome to EduTen </h3>
+              <h1 class="welbes">Best For Education</h1></p>
+              <p class="mono">Monotonely principle centered ahitectures through and standards magnetic
+                  metrics whereas cross functional products.</p>
+              <button class="topBtn">Let's Get Started</button>               
+          </section>
 
             <!-- About EduTen-->
 
@@ -43,11 +43,13 @@
                 <aside class="infotext">
                     <h4 class="tittleinfo">About EduTen</h4>
                     <details>
-                      <summary class="adesc">Description.</summary>
-                      <p class="adesc">Deskription.</p>
+                      <summary class="summ">Eduten is a digital learning platform that combines Finnish educational excellence with gamification and AI.</summary>
+                      <p class="adesc">Created by teachers, for teachers, Eduten is based on Finnish pedagogy and is adaptable to any curriculum worldwide.
+                        Eduten’s ready-made weekly program includes hundreds of high-quality tasks for students to build and improve their knowledge.
+                        Eduten creates positive and active learning experiences and we envision our platform being used in every school around the world.
+                      </p>
                     </details>
-                    <a href="#infobottom" class="infobottom">Read More</a>
-                </aside>
+                  </aside>
             </section>
 
             <!-- Popular Lesson -->
@@ -79,41 +81,54 @@
                     <a href="#moreless" class="moreless">See More Lesson</a>
             </section>
 
-            <!-- Bagian Daftar Guru/Teachers -->
+            <!-- Bagian Daftar Team -->
 
             <section class="top-article">
+                <div class="ourteam"><h2>Our Team</h2></div>
                 <div class="wrapper">
                   <ion-icon id="left" name="chevron-back-sharp"></ion-icon>
                   <ul class="carousel">
                     <li class="card">
                       <div class="imej"><img src="./img/jane.avif" alt="Jane" draggable="false"></div>
                       <h2>Jane Patricia</h2>
-                      <span>Sains Teacher</span>
+                      <span>Sistem Informasi</span>
+                      <span>Universitas Kristen Duta Wacana</span>
+                      <span>Student at RevoU Dech-Academy</span>
                     </li>
                     <li class="card">
                       <div class="imej"><img src="./img/putri.webp" alt="Putri" draggable="false"></div>
                       <h2>Putri Aulia Ramadani</h2>
-                      <span>Math Teacher</span>
+                      <span>Akuntansi</span>
+                      <span>Universitas Riau</span>
+                      <span>Student at RevoU Dech-Academy</span>
                     </li>
                     <li class="card">
                       <div class="imej"><img src="./img/khoiri.webp" alt="Khoeri" draggable="false"></div>
                       <h2>Khoeri Bahrul</h2>
-                      <span>Art Teacher</span>
+                      <span>Desain Komunikasi Visual</span>
+                      <span>Universitas Aisyiyah Bandung</span>
+                      <span>Student at RevoU Dech-Academy</span>
                     </li>
                     <li class="card">
                       <div class="imej"><img src="./img/vahran.webp" alt="Vahran" draggable="false"></div>
                       <h2>Vahran Arrazy</h2>
-                      <span>English Teacher</span>
+                      <span>Manajemen</span>
+                      <span>UPN Veteran Jakarta</span>
+                      <span>Student at RevoU Dech-Academy</span>
                     </li>
                     <li class="card">
                       <div class="imej"><img src="./img/indah.webp" alt="Indah" draggable="false"></div>
                       <h2>Indah Nur Safitri</h2>
-                      <span>History Teacher</span>
+                      <span>Manajemen</span>
+                      <span>Universitas Galuh</span>
+                      <span>Student at RevoU Dech-Academy</span>
                     </li>
                     <li class="card">
                       <div class="imej"><img src="./img/jannah.webp" alt="Jannah" draggable="false"></div>
                       <h2>Miftahul Jannah</h2>
-                      <span>Social Teacher</span>
+                      <span>Manajemen</span>
+                      <span>Universitas Hayam Wuruk Perbankan</span>
+                      <span>Student at RevoU Dech-Academy</span>
                     </li>
                   </ul>
                   <ion-icon id="right" name="chevron-forward-sharp"></ion-icon>
@@ -121,30 +136,6 @@
             </section>
                 
               
-
-              <!-- Our School Gallery -->
-
-            <section class="gallery">
-                <h1>Our School Gallery</h1>
-                  <p class="desc">Description.</p>                   
-                    <div class="btn-gallery">
-                        <span class="show"><a href="#Show">Show All</a></span>
-                        <span class="lesson"><a href="#lesson">Lesson</a></span>
-                        <span class="event"><a href="#event">Event</a></span>
-                        <span class="playing"><a href="#Playing">Playing</a></span>
-                        <span class="art"><a href="#Art">Art</a></span>
-                    </div>
-                <figure>
-                  <img src="https://media.istockphoto.com/id/1475583455/photo/stylized-illustration-of-a-night-sky-with-a-moon-colorful-spirals-in-blue-black-and-yellow.webp?b=1&s=170667a&w=0&k=20&c=5boIl1QOz6muiJWoNFHjs3LRsZs2j8uookfaAQuY5X0=" alt="Pic 1">
-                  <img src="https://images.unsplash.com/photo-1551019129-454ff1064ae6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=300&q=60" alt="Pic 2">
-                  <img src="https://images.unsplash.com/photo-1488655980602-a2d28399df6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=300&q=60" alt="Pic 3">
-                </figure>
-                <figure>
-                  <img src="https://images.unsplash.com/photo-1544598740-0910b979b2c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=300&q=60" alt="Pic 1">
-                  <img src="https://images.unsplash.com/photo-1627373717516-0f4bb24c487d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=300&q=60" alt="Pic 2">
-                  <img src="https://images.unsplash.com/photo-1681761998483-9cc54a4809a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=300&q=60" alt="Pic 3">
-                </figure>
-
             <!-- Overlay -->
 
             <section class="overlay">
@@ -203,55 +194,16 @@
                 <img src="https://cdn-icons-png.flaticon.com/128/630/630639.png" alt="Logo7">
             </figure>
           </section>
-
-          <!-- Don't Miss Our Events -->
-
-
-
-          <section class="events">
-            <h1>Don't Miss Our Events</h1>
-            <p class="desc">Description.</p>
-            <div class="event-container">
-                <div class="event-top">
-                  <p class="twenty">20 Sep</p>
-                  <img src="https://media.istockphoto.com/id/539281953/id/foto/permainan-luar-ruangan.jpg?s=612x612&w=0&k=20&c=vDEymGulZSllegJVktZfOwIErj6ICovLTwydUPPq4vg=" alt="Game Party">
-                  <div class="classes-one">
-                    <h3>Imagination Classes</h3>
-                    <p>08.00-10.00</p>
-                    <p>Location</p>
-                    <p>Description</p>
-                    <p class="join"><a href="join">Join Now</a></p>
-                  </div>
-                </div>
-                <div class="event-top"> 
-                  <p class="twenty">24 Sep</p>
-                  <img src="https://media.istockphoto.com/id/916606098/photo/family-day-out-at-the-fairground.webp?b=1&s=170667a&w=0&k=20&c=2Qh-Yi__M-Ju_eh9Hs34m7dhtCAshDtY_JYWKTdG6Tk=" alt="Festival">
-                  <div class="classes-one">
-                    <h3>Imagination Classes</h3>
-                    <p>08.00-10.00</p>
-                    <p>Location</p>
-                    <p>Description</p>
-                    <p class="join"><a href="join">Join Now</a></p>
-                  </div>
-                </div>
-                <div class="event-top"> 
-                  <p class="twenty">28 Sep</p>
-                  <img src="https://media.istockphoto.com/id/1044553040/id/foto/selamat-berbahagia-dengan-persahabatan-di-pesta-karnaval-atau-pesta-perayaan-ulang-tahun-atau.jpg?s=612x612&w=0&k=20&c=UqTu70-TETG9uKFkk2C9NDWizVwemcYMVxu5ZQPWKtg=" alt="Happy Kids">
-                  <div class="classes-one">
-                    <h3>Imagination Classes</h3>
-                    <p>08.00-10.00</p>
-                    <p>Location</p>
-                    <p>Description</p>
-                    <p class="join"><a href="join">Join Now</a></p>
-                  </div>
-                </div>
-                
-            </div>
-          </section>
-
          
            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            
+            
+            <!-- Footer -->
+            
+            <footer id="footer"></footer>
+           
+
         </body>
     </head>
 </HTML>
