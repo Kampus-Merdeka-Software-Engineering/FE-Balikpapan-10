@@ -10,6 +10,7 @@ async function fetchLesson(){
     try {
         const response = await fetch(`${API_BASE_URL}/lessonDetails/${id}`); 
         const data = await response.json();
+        console.log(data)
         // let coloumns = data.data;
         const releaseDate = document.getElementsByClassName('release-date')[0];
         const create = document.getElementById('create');
@@ -34,7 +35,7 @@ async function fetchLesson(){
         // })
     }
     catch (error) {
-        console(error);
+        console.log(error);
     }
 }
 

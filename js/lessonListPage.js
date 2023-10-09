@@ -5,12 +5,11 @@ const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
   fetch(`${API_BASE_URL}/lessons`)
   .then((res) => res.json())
   .then((data) => {
+    console.log(data)
+    let les = data.data;
     let cards = ``;
     let container = document.getElementById('wrapper-class');
-    // for(let i=0; i<=1; i){
-      let i = 1;
-      
-        data.forEach((lesson) => {
+        les.forEach((lesson) => {
           cards+=`
           <div class="class-card" data-aos="fade-up" data-aos-duration="700" data-aos-offset="-100" id="${lesson.id}" onclick="window.location.href='/lessonPage.html?id=${lesson.id}'">
           <img src="${lesson.image_lesson}" alt="Class 1" class="class1">

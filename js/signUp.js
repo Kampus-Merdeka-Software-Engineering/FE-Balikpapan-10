@@ -6,8 +6,6 @@ async function sendUser() {
     let email = document.getElementsByClassName('email')[0].value;
     let password = document.getElementsByClassName('password')[0].value;
   
-    console.log(name, email, password)
-  
     try {
       const response = await fetch(`${API_BASE_URL}/signUp`, {
         method: 'POST',
@@ -22,6 +20,6 @@ async function sendUser() {
       console.error(error);
     }
     finally {
-      alert("Selamat Datang di Eduten!")
+      alert("Selamat Datang di Eduten!");
     }
 }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, #490D98, #FEA926);
+    font-family: "Roboto";
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+}
+
+.container {
+    border: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(160, 160, 160, 0.2);
+    width: 350px;
+}
+
+.container h1, p {
+    color: rgb(27, 27, 27);
+}
+
+.formMsg{
+    display: flex;
+    flex-direction: column;
+}
+
+#desc{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formMsg input{
+    margin-bottom: 20px;
+    background-color: rgba(160, 160, 160, 0.2);
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+    border-radius: 7px;
+    border-width: thin;
+    padding: 5px;
+    outline: none;
+}
+
+.formMsg #message{
+    height: 50px;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+.formMsg input, button{
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 7px;
+    border-style: none;
+    color: #490D98;
+}
+
+.formMsg button:hover{
+    cursor: pointer;
+}

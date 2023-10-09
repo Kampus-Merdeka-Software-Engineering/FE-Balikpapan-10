@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contactUs.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(function(){
+            $('#navbar').load("navbar.html");
+        });
+    </script>
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <div class="contact-us">
+        <div class="container">
+            <h1 id="title">Contact Us</h1>
+            <p id="desc">Leave your message for our admin</p>
+            <form class="formMsg">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="emailMssg" placeholder="Email">
+                <input type="text" name="message" id="message" placeholder="Message">
+                <button id="btnSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/contactUs.js"></script>
+</body>
+</html>
