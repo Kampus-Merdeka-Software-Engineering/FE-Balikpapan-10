@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Mogra&family=Oswald&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap);
 
 html{
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
 }
 
 body{
@@ -18,21 +18,26 @@ body{
     align-items: center;
     justify-content: center;
     margin: auto;
-    background-color: rgba(250, 247, 74, 0.5);
+    height: 200px;
+    background-image: url('https://i.ibb.co/rfMf706/bgpage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: -50% 0;
 }
 
 .page-title h1{
-    font-family: 'Mogra', sans-serif;
+    font-family: 'Bubblegum Sans', sans-serif;
     margin-top: 30px;
     margin-bottom: 0;
-    color: rgb(128, 202, 245);
-    font-weight: 100;
+    color: white;
+    font-size: 40px
 }
 
 .page-title p{
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
-    color: rgb(165, 214, 243);
+    color: white;
 }
 
 main{
@@ -61,28 +66,32 @@ main{
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    width: 740px;
-    /* text-align: left; */
+    width: 650px;
 }
 
 .lesson-info .lesson-desc{
     display: flex;
-    margin-left: 20px;
+    background-color: #490D98
+}
+.lesson-info #create{
+    padding-left: 10px;
 }
 
 .lesson-desc p{
     margin-right: 10px;
+    color: white;
 }
 
 .lesson-desc i{
     height: 20px;
     margin-top: 16px;
     margin-right: 3px;
+    color: white;
 }
 
 .lesson-desc #btnLike{
     border-style: none;
-    background-color: white;
+    background-color: rgb(73, 13, 152); 
     padding: 0;
     margin-top: 0;
 }
@@ -93,18 +102,14 @@ main{
 
 .lesson-info #desc-text{
     height: 200px;
-    background-color: gray;
-    /* color: white; */
-}
-
-.text-point{
-    height: 100px;
-    background-color: gray;
+    text-align: justify;
+    margin-top: 0;
 }
 
 .lesson-tag{
     display: flex;
     margin-top: 40px;
+    background-color: rgb(165, 214, 243);
 }
 
 .lesson-tag #share{
@@ -130,7 +135,7 @@ main{
 
 form{
     margin-bottom: 50px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 form #search{
@@ -141,7 +146,7 @@ form #search{
     width: 365px;
     height: 35px;
     border-radius: 5px;
-    border-color: rgb(243, 243, 243);
+    border-color: #FEA926;
     border-style: solid;
     padding: 8px;
     box-shadow: inset .3px .3px .3px .3px #f0f1f2;
@@ -158,7 +163,6 @@ form #search{
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    /* background-color: blue; */
     width: 360px;
 }
 
@@ -166,7 +170,7 @@ form #search{
     display: flex;
     border-style:solid;
     border-width: thin;
-    border-color: rgb(222, 222, 223);
+    border-color: #FEA926;
     border-bottom: 0;
     justify-content: space-between;
     padding-left: 10px;
@@ -175,7 +179,7 @@ form #search{
 
 .sidebar .download{
     border-style:solid;
-    border-color: rgb(222, 222, 223);
+    border-color: #FEA926;
     border-width: thin;
     padding-left: 10px;
 }
@@ -207,7 +211,6 @@ form #search{
     }
     .main-content{
         width: 100%;
-        /* background-color: green; */
         height: 100%;
     }
     .main-content img{
@@ -218,8 +221,7 @@ form #search{
         width: 100%;
     }
     .lesson-info #desc-text{
-        width: 50%;
-        /* background-color: red; */
+        width: 65%;
     }
 
     .lesson-info .text-point{
@@ -228,23 +230,25 @@ form #search{
 
     .lesson-tag{
         display: flex;
-        width: 50%;
+        width: 42%;
         margin: 0;
     }
 
     .lesson-tag .tags{
         margin: 0;
+        margin-top: 17px;
+        margin-left: 5px;
     }
-
+    .lesson-info .lesson-desc{
+        width: 65%;
+    }
     .side-content{
         width: 100%;
         height: 100%;
         padding-left: 10px;
-        /* background-color: blue; */
     }
     form #search{
         width: 95%;
-        /* float: left; */
     }
 
     .sidebar{
@@ -258,19 +262,34 @@ form #search{
 }
 
 @media screen and (max-width: 576px) {
+    .page-title {
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .page-title h1{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .page-title p {
+        font-size: 15px;
+    }
     main{
         padding: 2%;
         grid-template-columns: 40% 15% 40%;
         column-gap: 15px;
     }
-
-    .lesson-info #desc-text{
-        width: 44%;
-        /* background-color: red; */
+    .main-content .lesson-desc{
+        width: 50%;
     }
-
+    .lesson-info #desc-text{
+        width: 50%;
+    }
     .lesson-info .text-point{
         width: 44%;
     }
-
 }

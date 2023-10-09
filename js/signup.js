@@ -10,9 +10,9 @@ const form = document.querySelector("form"),
 function checkEmail() {
   const emaiPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (!emailInput.value.match(emaiPattern)) {
-    return emailField.classList.add("invalid"); //adding invalid class if email value do not mathced with email pattern
+    return emailField.classList.add("invalid");
   }
-  emailField.classList.remove("invalid"); //removing invalid class if email value matched with emaiPattern
+  emailField.classList.remove("invalid"); 
 }
 
 // Hide and show password
@@ -20,7 +20,7 @@ const eyeIcons = document.querySelectorAll(".show-hide");
 
 eyeIcons.forEach((eyeIcon) => {
   eyeIcon.addEventListener("click", () => {
-    const pInput = eyeIcon.parentElement.querySelector("input"); //getting parent element of eye icon and selecting the password input
+    const pInput = eyeIcon.parentElement.querySelector("input"); 
     if (pInput.type === "password") {
       eyeIcon.classList.replace("bx-hide", "bx-show");
       return (pInput.type = "text");
@@ -36,9 +36,9 @@ function createPass() {
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
   if (!passInput.value.match(passPattern)) {
-    return passField.classList.add("invalid"); //adding invalid class if password input value do not match with passPattern
+    return passField.classList.add("invalid"); 
   }
-  passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
+  passField.classList.remove("invalid"); 
 }
 
 // Confirm Password Validtion
@@ -69,3 +69,31 @@ form.addEventListener("submit", (e) => {
     location.href = form.getAttribute("action");
   }
 });
+
+const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app'
+const submit = document.getElementById('btnSubmit');
+
+async function sendUser() {
+    let name = document.getElementsByClassName('name')[0].value;
+    let email = document.getElementsByClassName('email')[0].value;
+    let password = document.getElementsByClassName('password')[0].value;
+  
+    console.log(name, email, password)
+  
+    try {
+      const response = await fetch(`${API_BASE_URL}/signUp`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, email, password })
+      })
+      const data = await response.json();
+    }
+    catch (error) {
+      console.error(error);
+    }
+    finally {
+      alert("Selamat Datang di Eduten!")
+    }
+}

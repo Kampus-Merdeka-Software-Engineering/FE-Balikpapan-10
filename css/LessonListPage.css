@@ -11,17 +11,17 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   filter: saturate(80%);
-  height: 120px;
+  height: 200px;
+  background-image: url('https://i.ibb.co/rfMf706/bgpage.png');
 }
 
 .text-cover h1 {
   font-size: 50px;
   text-align: center;
   font-style: italic;
-  color: rgb(165, 214, 243);
-  background-color: rgba(250, 247, 74, 0.5);
+  color: white;
   text-shadow: 2px 2px 4px rgba(161, 159, 159, 0.5);
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 10px;
 }
 
@@ -29,8 +29,7 @@ body{
   font-size: 22px;
   text-align: center;
   font-style: italic;
-  color: rgb(165, 214, 243);
-  background-color: rgba(250, 247, 74, 0.5);
+  color: white;
   text-shadow: 1px 1px 1px rgba(119, 118, 118, 0.5);
   height: 30px;
 }
@@ -41,13 +40,13 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 60px;
   justify-content: center;
 }
 #wrapper-class {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
   margin-bottom: 40px;
 }
 
@@ -99,24 +98,28 @@ body{
 }
 .class-card .description{
   position: absolute;
-  background: linear-gradient(0deg, rgb(165, 214, 243) 70%, transparent);
+  background: linear-gradient(0deg, #490D98 70%, transparent);
   margin: -20px;
   margin-top: 0;
   padding: 20px;
   padding-top: 0px;
 }
-.class-card .description{
-  position: absolute;
-  background: linear-gradient(0deg, rgb(165, 214, 243) 70%, transparent);
-  margin: -20px;
-  margin-top: 0;
-  padding: 20px;
-  padding-top: 0px;
+.description .desc-title{
+  color: white;
 }
-.class-card .desc-time{
-  font-weight: bold;
-  /* color: white; */
+
+.description .desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 75px;
+  overflow: hidden;
+  color: white;
 }
+.description .card-title{
+  display: block;
+}
+
 @media(hover: hover){
   .class-card:hover .description{
     width: 100%;
@@ -124,12 +127,12 @@ body{
     bottom: 10px;
   }
   
-  .class-card:hover .class1{
+  .class-card:hover img{
     filter: blur(3px);
   }
 }
 
-.class-card .class1 {
+.class-card img {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -174,21 +177,22 @@ body{
     display: block;
   }
   .class-card{
-    height: 200px;
-    /* display: flex; */
+    display: block;
+    flex: auto;
     width: 100%;
     overflow: visible;
     margin-bottom: 20px;
   }
 
-  .class-card .class1{
+  .class-card img{
     max-width: 30%;
     max-height: 60%;
     display: block;
-    /* flex-direction: column; */
     float: left;
   }
-
+  .card-title {
+    display: none;
+  }
   .class-card h3{
     font-size: 18px;
     width: fit-content;
@@ -196,15 +200,12 @@ body{
 
   .class-card .class-info{
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
     width: fit-content;
   }
 
   .class-info .age, .level{
     width: 70px;
     height: 30px;
-    /* display: flex; */
   }
 
   .class-card .description{
@@ -212,26 +213,55 @@ body{
     flex-direction: column;
     padding-left: 37%;
     background: none;
-    /* position: absolute;
-    transform: translateY(-170px); */
     width: 100%;
   }
 
   .description .desc{
+    color: black;
+    transform: translateY(-135px);
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
-    height: 75px;
+    height: 110px;
     overflow: hidden;
   }
 
   .desc-title button{
     margin-top: 5px;
   }
+  .class-card h3 {
+    margin-left: 30px;
+  }
+  .class-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .page-title {
+    height: 100px;
+  }
+  .page-title h1{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 25px;
+  }
+  .page-title h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+
+  .class-container{
+    padding-top: 40px;
+  }
   .class-card h3{
     font-size: 16px;
+  }
+  .description .desc{
+    margin-left: 20px;
+    font-size: 14px;
+    height: 95px;
   }
 }

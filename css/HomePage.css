@@ -20,13 +20,14 @@ body{
 .page-title{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 200px;
+  color: white;
+  text-indent: 25%;
+  font-size: 20px;
   justify-content: center;
   margin: auto;
   background-image: url(../img/bgpage.png);
-}
-.page-title p{
-  padding-bottom: 20px;
+  background-size: 100%;
 }
 main {
 	margin: auto;
@@ -54,7 +55,7 @@ h4 {
 }
 .content-title{
     margin-top: 30px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     margin-left: 30px;
     height: 42px;
     font-weight: 500;
@@ -68,39 +69,26 @@ h4 {
   display: flex;
   flex-wrap: wrap;
 }
-.row1{
-  margin: auto;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .row,
 .row > .column {
 	padding: 25px;
 }
-.row1,
-.row1 > .column1 {
-	padding: 25px;
-}
+
 #wrapper-class{
   width: 100%;
   height: auto;
-  margin: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 65px;
-  justify-content: left;
+  justify-content: center;
 }
-#row-class{
-  width: 100%;
-}
+
 .column {
 	float: left;
 	width: 450px;
 }
 
-.row1:after {
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -116,15 +104,7 @@ h4 {
     text-decoration: none;
     width: 350px;
 }
-.container{
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    margin-left: 35px;
-}
+
 .button1{
   background: rgb(13, 234, 13);
 }
@@ -137,13 +117,13 @@ h4 {
   width: 100%;
   background: #02AAB0;
 }
-.delete-button{
-  padding: 5px;
-  background: #E74645;
-}
+
 @media (max-width: 768px) {
   .page-title{
     width: 100%;
+    font-size: 13px;
+    height: 150px;
+    text-indent: 15%;
   }
   #navbar{
     font-size: 12px;
@@ -151,11 +131,15 @@ h4 {
 	.column {
 		width: 50%;
 	}
+  .content{
+    width: 100%;
+  }
   .container{
     width: 42%;
   }
   #wrapper-class{
-    width: 50%;
+    width: 50%; 
+    gap: 25px;
   }
   .images{
     height: 150px;
@@ -175,14 +159,21 @@ h4 {
   }
 }
 @media (max-width: 576px) {
+  .page-title{
+    font-size: 10px;
+    text-indent: 3%;
+  }
   .column {
 		width: 100%;
 	}
+  .content{
+    width: 100%;
+  }
 	#wrapper-class{
     width: 100%;
   }
   .container{
-    width: 80%;
+    width: 75%;
   }
 }
 
