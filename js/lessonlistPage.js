@@ -11,7 +11,7 @@ const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
   lesson.forEach((lesson) => {
       cards+=`
     
-      <div class="class-card" data-aos="fade-up" data-aos-duration="700" data-aos-offset="-100" id="${lesson.id}" onclick="window.location.href='/lessonPage.html?id=${lesson.id}'">
+      <div class="class-card" data-aos="fade-up" data-aos-duration="700" data-aos-offset="-100" id="${lesson.id}" onclick="window.location.href='/FE-Balikpapan-10/lessonPage.html?id=${lesson.id}'">
       <img src="${lesson.image_lesson}" alt="Class 1" class="class1">
       <div class="class-info">
         <p class="age">Age: ${lesson.age}</p>
