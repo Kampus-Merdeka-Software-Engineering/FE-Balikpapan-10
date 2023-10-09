@@ -322,6 +322,7 @@ li i{
     }
     nav ul{
         width: 50%;
+        margin-left: auto;
     }
 }
 

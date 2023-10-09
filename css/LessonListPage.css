@@ -109,11 +109,15 @@ body{
 
 .class-card .description{
   position: absolute;
-  background: linear-gradient(0deg, rgb(165, 214, 243) 70%, transparent);
+  background: linear-gradient(0deg, #490D98 70%, transparent);
   margin: -20px;
   margin-top: 0;
   padding: 20px;
   padding-top: 0px;
+}
+
+.description .desc-title{
+  color: white;
 }
 
 .description .desc{
@@ -122,6 +126,7 @@ body{
   -webkit-box-orient: vertical;
   height: 75px;
   overflow: hidden;
+  color: white;
 }
 
 .description .card-title{
@@ -194,14 +199,15 @@ body{
     display: block;
   }
 
-  /* .class-row{
+  #wrapper-class{
     display: block;
-  } */
+  }
 
   .class-card{
-    height: 200px;
-    /* display: flex; */
+    display: block;
+    flex: auto;
     width: 100%;
+    height: 170px;
     overflow: visible;
     margin-bottom: 20px;
   }
@@ -212,6 +218,10 @@ body{
     display: block;
     /* flex-direction: column; */
     float: left;
+  }
+
+  .card-title {
+    display: none;
   }
 
   .class-card h3{
@@ -243,20 +253,54 @@ body{
   }
 
   .description .desc{
+    color: black;
+    transform: translateY(-135px);
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
-    height: 75px;
+    height: 110px;
     overflow: hidden;
   }
 
   .desc-title button{
     margin-top: 5px;
   }
+
+  .class-card h3 {
+    margin-left: 30px;
+  }
+  .class-info {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .page-title {
+    height: 100px;
+  }
+  .page-title h1{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 25px;
+  }
+  .page-title h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+
+  .class-container{
+    padding-top: 40px;
+  }
+
   .class-card h3{
     font-size: 16px;
+  }
+
+  .description .desc{
+    margin-left: 20px;
+    font-size: 14px;
+    height: 95px;
   }
 }
