@@ -3,9 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body{
   overflow-x: hidden;
 }
+
 .page-title {
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,16 +45,20 @@ body{
   padding-top: 60px;
   justify-content: center;
 }
+
 #wrapper-class {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* align-items: center; */
   margin-bottom: 40px;
 }
 
 .class-card {
   flex: 0 0 calc(30% - 20px);
   flex-wrap: wrap;
+  /* min-width: */
+  /* width: 30%; */
   height: 300px;
   border: 1px solid #cccccc;
   padding: 20px;
@@ -66,9 +72,11 @@ body{
   border-radius: 30px;
   margin-bottom: 30px;
 }
+
 .class-card .class-info{
   display: flex;
 }
+
 .class-card .age{
   color: rgb(53, 53, 53);
   background-color: rgb(75, 243, 97);
@@ -80,6 +88,7 @@ body{
   margin-bottom: 5px;
   margin-right: 10px;
 }
+
 .class-card .level{
   color: white;
   background-color: rgb(198, 113, 247);
@@ -90,12 +99,14 @@ body{
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
 .class-card h3 {
   color: #ffc000;
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 22px;
 }
+
 .class-card .description{
   position: absolute;
   background: linear-gradient(0deg, #490D98 70%, transparent);
@@ -104,6 +115,7 @@ body{
   padding: 20px;
   padding-top: 0px;
 }
+
 .description .desc-title{
   color: white;
 }
@@ -116,8 +128,9 @@ body{
   overflow: hidden;
   color: white;
 }
+
 .description .card-title{
-  display: block;
+  margin-top: 15px;
 }
 
 @media(hover: hover){
@@ -133,15 +146,22 @@ body{
 }
 
 .class-card img {
+  /* max-width: 100%; */
   display: flex;
   justify-content: center;
   margin: auto;
   width: fit-content;
   max-height: 75%;
 }
+
+/* .class-card .class1{
+  width: 400px;
+} */
+
 .desc-title{
   margin-top: 5px;
 }
+
 .desc-title button{
   margin-top: 0;
   margin-left: 3px;
@@ -150,6 +170,7 @@ body{
   /* margin-bottom: 10px; */
   display: none;
 }
+
 .class-card .addLesson{
   border-style: none;
   color: rgb(60, 176, 243);
@@ -159,6 +180,7 @@ body{
   margin-top: 20px;
   box-shadow: 1px 1px rgb(168, 161, 161);
 }
+
 .class-card .addLesson:hover{
   cursor: pointer;
 }
@@ -176,10 +198,16 @@ body{
     max-width: 100%;
     display: block;
   }
+
+  #wrapper-class{
+    display: block;
+  }
+
   .class-card{
     display: block;
     flex: auto;
     width: 100%;
+    height: 170px;
     overflow: visible;
     margin-bottom: 20px;
   }
@@ -188,11 +216,14 @@ body{
     max-width: 30%;
     max-height: 60%;
     display: block;
+    /* flex-direction: column; */
     float: left;
   }
+
   .card-title {
     display: none;
   }
+
   .class-card h3{
     font-size: 18px;
     width: fit-content;
@@ -200,12 +231,15 @@ body{
 
   .class-card .class-info{
     display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
     width: fit-content;
   }
 
   .class-info .age, .level{
-    width: 70px;
+    width: fit-content;
     height: 30px;
+    /* display: flex; */
   }
 
   .class-card .description{
@@ -213,6 +247,8 @@ body{
     flex-direction: column;
     padding-left: 37%;
     background: none;
+    /* position: absolute;
+    transform: translateY(-170px); */
     width: 100%;
   }
 
@@ -224,11 +260,13 @@ body{
     -webkit-box-orient: vertical;
     height: 110px;
     overflow: hidden;
+    text-align: justify;
   }
 
   .desc-title button{
     margin-top: 5px;
   }
+
   .class-card h3 {
     margin-left: 30px;
   }
@@ -256,12 +294,14 @@ body{
   .class-container{
     padding-top: 40px;
   }
+
   .class-card h3{
     font-size: 16px;
   }
+
   .description .desc{
     margin-left: 20px;
     font-size: 14px;
-    height: 95px;
+    height: 100px;
   }
 }

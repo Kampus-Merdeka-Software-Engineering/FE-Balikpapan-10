@@ -66,13 +66,16 @@ form.addEventListener("submit", (e) => {
     !passField.classList.contains("invalid") &&
     !cPassField.classList.contains("invalid")
   ) {
-    location.href = form.getAttribute("action");
+    //location.href = form.getAttribute("action");
   }
 });
 
 const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app'
-const submit = document.getElementById('btnSubmit');
-
+const formSignup = document.getElementById('form-signup');
+formSignup.addEventListener("submit", (e) => {
+  e.preventDefault();
+  sendUser();
+})
 async function sendUser() {
     let name = document.getElementsByClassName('name')[0].value;
     let email = document.getElementsByClassName('email')[0].value;
@@ -89,6 +92,7 @@ async function sendUser() {
       body: JSON.stringify({ name, email, password })
       })
       const data = await response.json();
+      console.log(data);
     }
     catch (error) {
       console.error(error);

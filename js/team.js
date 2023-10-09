@@ -19,10 +19,10 @@ function getAllData() {
             <span class="NamaTeam">${team.name}</span>
             <span class="TeamJob">${team.role}</span>
             <div class="linkedid">
-                <img src="${team.image_linkedin}" width="28px" height="28px" alt="linkedid">
+                <a href="${team.profil_linkedin}"><img src="${team.image_linkedin}" width="28px" height="28px" alt="linkedid"></a>
                     </div>
             <div class="github">
-                <img src="${team.image_github}" width="28px" height="28px" alt="github">
+                <a href="${team.profil_github}"><img src="${team.image_github}" width="28px" height="28px" alt="github"></a>
                 </div>
                     </div>
          `
