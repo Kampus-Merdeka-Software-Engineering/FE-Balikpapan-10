@@ -2,10 +2,10 @@ const submit = document.getElementById('btnSubmit');
 
 submit.addEventListener('click', (e) => {
     e.preventDefault();
-    addMessage();
+    sendMessage();
 });
 
-// const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
+const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
 
 async function sendMessage() {
     let name = document.getElementById('name').value;
@@ -20,6 +20,8 @@ async function sendMessage() {
             body: JSON.stringify({ name, email, message })
         })
         const data = await response.json();
+        console.log(data);
+        alert(data);
     }
     catch (error) {
         console.error(error);
