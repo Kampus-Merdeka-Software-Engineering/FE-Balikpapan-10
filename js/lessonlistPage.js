@@ -6,8 +6,9 @@ const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
   .then((data) => {
     const container = document.getElementById('wrapper-class');
     console.log(data);
+    let lesson = data.data;
     let cards = ``;
-    data.forEach((lesson) => {
+  lesson.forEach((lesson) => {
       cards+=`
     
         <div class="class-card" data-aos="fade-up" data-aos-duration="700" data-aos-offset="-100" id="${lesson.id}" onclick="window.location.href='/lessonPage.html?id=${lesson.id}'">
@@ -20,19 +21,16 @@ const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
         <div class="description">
           <p class="desc-title">Description<button><i class="bi bi-chevron-down"></i></button></p>
           <p class="desc">${lesson.desc}</p>
-          <button class="addLesson"><i class="bi bi-plus-lg"></i></button>
         </div>
       </div>
   
     `
     })
     container.innerHTML = cards;
-    // handleCard(); 
   })
   .catch((err) => {console.log(err)})
   
 
-{/* <button class="addLesson"><i class="bi bi-plus-lg"></i></button> */}
 const path = window.location.pathname;
 console.log(path);
 
