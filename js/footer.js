@@ -20,11 +20,13 @@ async function sendMessage() {
             body: JSON.stringify({ name, email, message })
         })
         const data = await response.json();
-        console.log(data);
-        alert(data);
+        // console.log(data);
     }
     catch (error) {
         console.error(error);
+    }
+    finally {
+        alert("Pesan berhasil dikirimkan!")
     }
 }
 
