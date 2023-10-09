@@ -135,6 +135,9 @@ cursor: pointer;
   padding-left: 40px;
   width: fit-content;
 }
+.summ{
+  text-align: justify;
+}
 
 /* Tablet */
 @media (max-width: 768px) {
@@ -175,7 +178,7 @@ cursor: pointer;
   justify-content: center;
   font-family: 'Bubblegum Sans', cursive;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -212,7 +215,8 @@ cursor: pointer;
       background-color: #B53953;
       padding: 10px;
       color: rgb(255, 255, 255);
-      font-size: 10px;
+      font-size: 16px;
+      font-weight: bold;
       margin-top: 20px;
       text-align: center;
       width: 150px;
@@ -232,9 +236,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-min-height: 100vh;
+min-height: fit-content;
 padding: 0 35px;
 background-color: #FEA926;
+padding-bottom: 35px;
 }
 
 .top-article .ourteam h2 {
@@ -352,11 +357,11 @@ margin: 8px 0 5px;
 }
 
 .overlay .content h3 {
-  font-size: 28px;
+  font-size: 33px;
   color: white;
 }
 .overlay .content span {
-  font-size: 12px;
+  font-size: 20px;
   color: white;
 }
 
@@ -365,12 +370,13 @@ margin: 8px 0 5px;
 
 .comments {
 text-align: center;
-height: 340px;
+height: fit-content;
+padding-bottom: 35px;
 }
 
 .comments h1 {
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 24px;
+  font-size: 40px;
   padding: 32px;
   text-align: center;
   color: #E74645;
@@ -434,25 +440,24 @@ height: fit-content;
 
 .partners h1 {
 font-family: 'Bubblegum Sans', cursive;
-font-size: 24px;
-padding: 32px;
+font-size: 40px;
+padding: 10px;
 text-align: center;
 color: #ffffff;
 }
 
 .partners img {
-  margin: 24px;
+  margin: 0px;
   padding: 12px;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 /* Tablet */
 @media (max-width: 1200px) {
-
   .partners img {
-    width: 50%;
-    height:  500%;
+    width: 100%;
+    height: 100%;
   }
   }
 @media (max-width: 768px) {
