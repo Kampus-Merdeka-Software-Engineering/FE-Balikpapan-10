@@ -5,7 +5,6 @@ function getAllData() {
         let teams = data.data;
         let wrapper = document.getElementById("wrapper-team");
   let TeamList = "";
-  console.log(TeamList);
   
   for(let i=0; i<1; i++){
   teams.forEach((team) => {

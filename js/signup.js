@@ -92,12 +92,11 @@ async function sendUser() {
       body: JSON.stringify({ name, email, password })
       })
       const data = await response.json();
-      console.log(data);
     }
     catch (error) {
-      console.error(error);
     }
     finally {
       alert("Selamat Datang di Eduten!")
+      window.location.assign('./')
     }
 }

@@ -8,7 +8,6 @@ async function fetchLesson(){
     try {
         const response = await fetch(`${API_BASE_URL}/lessonDetails/${id}`); 
         const data = await response.json();
-        console.log(data)
         
         const releaseDate = document.getElementsByClassName('release-date')[0];
         const create = document.getElementById('create');
@@ -32,7 +31,6 @@ async function fetchLesson(){
         img.src = data.image_lesson_page;
     }
     catch (error) {
-        console.log(error);
     }
 }
 

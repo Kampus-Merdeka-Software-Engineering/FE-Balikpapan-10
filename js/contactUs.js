@@ -20,8 +20,7 @@ async function addMessage() {
             },
             body: JSON.stringify({ name, email, message })
         })
-        const data = await response.json();
-        console.log(data);
+        const data = await response.json()
     }
 
     catch(error) {

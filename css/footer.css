@@ -6,12 +6,12 @@ html{
 
 body{
     margin:0;
+    font-family: "Roboto";
 }
 
 footer{
     background-color: #FEA926;
     width: 100%;
-    /* height: 166px; */
     display: block;
 }
 
@@ -20,13 +20,11 @@ footer{
     display: flex;
     width: 100%;
     height: 100px;
-    /* align-items: center; */
     justify-content: space-between;
     margin: 0;
 }
 
 footer .desc{
-    /* margin-top: 40px; */
     font-size: x-large;
     color: white;
     display: flex;
@@ -79,15 +77,13 @@ footer .desc{
 
 .contact{
     background-color: #B53953;
-    height: 350px;
+    height: 150px;
     margin-bottom: 0;
     padding-left: 100px;
     padding-right: 100px;
-    /* padding: 100px; */
     padding-top: 50px;
     padding-bottom: 20px;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -107,6 +103,7 @@ footer .desc{
 .social-media h2{
     margin-left: 10px;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .icon a{
@@ -188,6 +185,7 @@ footer .desc{
 .end p{
     margin-top: 0;
     margin-left: 5px;
+    margin-bottom: 7px;
 }
 
 hr{

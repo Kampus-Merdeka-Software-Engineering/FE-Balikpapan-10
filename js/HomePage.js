@@ -4,9 +4,8 @@ function getAllData() {
       .then(data => {
       let coloumns = data.data;
       let wrapper = document.getElementById("wrapper-class");
-      console.log(data);
+
 let listClass = "";
-console.log(listClass);
 
 for(let i=0; i<1; i++){
 coloumns.forEach((coloumn) => {

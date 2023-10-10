@@ -5,7 +5,6 @@ const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
   .then((res) => res.json())
   .then((data) => {
     const container = document.getElementById('wrapper-class');
-    console.log(data);
     let lesson = data.data;
     let cards = ``;
   lesson.forEach((lesson) => {
@@ -33,5 +32,4 @@ const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app';
   
 
 const path = window.location.pathname;
-console.log(path);
 
