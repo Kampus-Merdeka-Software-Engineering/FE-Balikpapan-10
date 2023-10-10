@@ -66,9 +66,9 @@ form.addEventListener("submit", (e) => {
     !passField.classList.contains("invalid") &&
     !cPassField.classList.contains("invalid")
   ) {
-    //location.href = form.getAttribute("action");
   }
 });
+
 
 const API_BASE_URL = 'https://be-balikpapan-10-production.up.railway.app'
 const formSignup = document.getElementById('form-signup');

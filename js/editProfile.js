@@ -9,7 +9,6 @@ btnCon.addEventListener('click', (e) => {
     saveMessage.style.display = 'flex';
     main.style.filter = 'blur(3px)';
     document.body.classList.add('stop-scrolling');
-    // main.style.overflow = 'hidden';
 });
 
 btnSave.addEventListener('click', () => {

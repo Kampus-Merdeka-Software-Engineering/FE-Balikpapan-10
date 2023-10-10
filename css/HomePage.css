@@ -134,12 +134,11 @@ h4 {
   .content{
     width: 100%;
   }
-  .container{
-    width: 42%;
-  }
   #wrapper-class{
-    width: 50%; 
+    width: 85%; 
     gap: 25px;
+    height: fit-content;
+    align-items: center;
   }
   .images{
     height: 150px;

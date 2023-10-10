@@ -170,7 +170,6 @@ footer .desc{
 }
 
 .bottom{
-    /* display: block; */
     background-color: #B53953;
 }
 
@@ -252,9 +251,7 @@ hr{
     .footer-content{
         display: block;
         width: fit-content;
-        /* margin: auto; */
         padding: 0;
-        /* align-items: center; */
         padding-bottom: 5%;
     }
 
@@ -285,7 +282,6 @@ hr{
         display: block;
         width: auto;
         margin: auto;
-        /* padding: 0; */
         align-items: center;
         padding-bottom: 5%;
     }
